@@ -21,23 +21,18 @@
     --bodyColor :rgb(240,240,246);
     --cardBG:rgb(225,225,235);
 }
-/* html{
+html{
     scroll-behavior: smooth;
-} */
+}
 a{
     text-decoration: none;
 }
 li{
     list-style: none;
 }
-.section{
+/* .section{
     padding: 4rem 0 2rem;
-}
-.container{
-    padding-left:1.5rem;
-    padding-right:1.5rem;
-
-}
+} */
 .icon{
     cursor:pointer;
     font-size:2rem
@@ -54,9 +49,13 @@ li{
 .btn{
     padding:.6rem 1.5rem;
     background: var(--gradientColor);
-    border-radius:3rem;
+    border-radius:.6rem;
     border:none;
     cursor:pointer;
+    -webkit-border-radius:.6rem;
+    -moz-border-radius:.6rem;
+    -ms-border-radius:.6rem;
+    -o-border-radius:.6rem;
 }
 .btn a {
     color:var(--whiteColor);
@@ -72,7 +71,6 @@ img,video{
 }
 input{
     font-size:100%;
-
 }
 body{
     background: var(--bodyColor)
@@ -84,7 +82,7 @@ body{
             margin:auto !important;
 
         }
-        .section{
+        /* .section{
             padding:6rem 0 4rem;
-        }
+        } */
 }

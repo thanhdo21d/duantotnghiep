@@ -3,8 +3,6 @@ import './Footer.css'
 import videoo from '../../assets/video2.mp4'
 import { BsFillSendCheckFill } from 'react-icons/bs'
 import { FaPlaneDeparture } from 'react-icons/fa'
-import { BsFacebook } from 'react-icons/bs'
-import { AiFillGithub } from 'react-icons/ai'
 import { FiChevronRight } from 'react-icons/fi'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -28,7 +26,7 @@ const Footer = () => {
                     </div>
 
                     <div className='inputDiv flex'>
-                        <input type='text' placeholder='Enter Email Address' />
+                        <input type='text' className='lg:w-[400px] xl:w-[555px]' placeholder='Enter Email Address' />
                         <button className='btn flex' type='submit'> SEND <BsFillSendCheckFill className='icon' /> </button>
                     </div>
                 </div>
@@ -38,7 +36,7 @@ const Footer = () => {
 
                     <div data-aos="fade-up" className='footerIntro flex'>
                         <div className='logoDiv'>
-                            <a href='https://www.facebook.com/DSno01' className='logo flex'>
+                            <a  className='logo flex'>
                                 <FaPlaneDeparture className='icon' />  Travel.
                             </a>
                         </div>
@@ -128,7 +126,7 @@ const Footer = () => {
                         </div>
                     </div>
                     {/*  */}
-                    <div className='footerDiv'>
+                    <div className='footerDiv pt-1'>
                         <small> BEST TRAVEL WEBSITE THEME</small>
                         <small> COPYRIGHTS RESERVED  -  ISRATECH 2023</small>
                     </div>

@@ -5,7 +5,6 @@ import { AiFillCloseCircle } from 'react-icons/ai'
 import { TbGridDots } from 'react-icons/tb'
 import Footer from '../footer/Footer'
 import Home from '../home/Home'
-
 const Navbar = () => {
     const [active, setActive] = useState('navBar')
     const shownav = () => {
@@ -17,37 +16,30 @@ const Navbar = () => {
     return (
         <section className='navBarSection'>
             <header className='header flex'>
-                <div className='logoDiv'>
+                <div className='logoDiv flex gap-5'>
                     <a  className='logo flex gap-4 pb-2 items-center'>
                       <FaPlaneDeparture size={30} className="icon" />  <h1 className='text-2xl pt-2'>  Travel.</h1>
                     </a>
+                    
                 </div>
                 <div className={active}>
                     <ul className='navLists flex'>
-                        <li className='navItem'>
-                            <a  className='navLink'>Home</a>
+                       
+                         <li className='navItem'>
+                            <a  className='navLink'>Trợ Giúp</a>
                         </li>
                         <li className='navItem'>
-                            <a  className='navLink'>Packages</a>
+                            <a  className='navLink'></a>
                         </li>
                         <li className='navItem'>
-                            <a  className='navLink'>Shop</a>
+                            <a  className='navLink cursor-pointer'>USD</a>
                         </li>
-                        <li className='navItem'>
-                            <a  className='navLink'>Abouts</a>
-                        </li>
-                        <li className='navItem'>
-                            <a  className='navLink'>Pages</a>
-                        </li>
-                        <li className='navItem'>
-                            <a  className='navLink'>News</a>
-                        </li>
-                        <li className='navItem'>
-                            <a  className='navLink'>Contacts</a>
-                        </li>
-                        <button className='btn'>
-                            <a >
-                                BOOK NOW
+                        <button style={{backgroundColor:"rgba(0,0,0,0.2)"}} className='text-white mr-3 p-2 font-medium rounded-md '>
+                                Tìm Kiếm Đặt Chỗ
+                        </button>
+                         <button className='btn'>
+                            <a>
+                                Đăng Nhập / Đăng Ký
                             </a>
                         </button>
                     </ul>
